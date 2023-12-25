@@ -20,6 +20,9 @@
  *   getStringLength(undefined) => 0
  */
 function getStringLength(value) {
+  if (typeof value !== "string") {
+    return 0
+  }
   let a = (value.length);
   return a;
 }
@@ -39,11 +42,13 @@ function getStringLength(value) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-  if ( typeof value === String)
+  if ( typeof value === "string" || (value instanceof String) === true)
+  
   {
     return true
 
   }
+  
   else 
 
   return false
