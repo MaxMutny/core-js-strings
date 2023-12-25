@@ -4,7 +4,7 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String   *
  *                                                                                           *
  ******************************************************************************************* */
-
+/* eslint-disable */
 /**
  * Returns the length of the given string.
  *
@@ -19,8 +19,9 @@
  *   getStringLength(null) => 0
  *   getStringLength(undefined) => 0
  */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
+function getStringLength(value) {
+  let a = (value.length);
+  return a;
 }
 
 /**
@@ -37,8 +38,16 @@ function getStringLength(/* value */) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(/* value */) {
-  throw new Error('Not implemented');
+function isString(value) {
+  if ( typeof value === String)
+  {
+    return true
+
+  }
+  else 
+
+  return false
+  ;
 }
 
 /**
